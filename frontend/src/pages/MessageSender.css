@@ -1,0 +1,301 @@
+body, html {
+ 
+  /* backdrop-filter: blur(10px);/ */
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  /* backdrop-filter: blur(10px) ; */
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+   /* backdrop-filter: blur(10px); */
+}
+
+
+.message-panel {
+  display: flex;
+  background: #999999;
+  /* backdrop-filter: blur(15px); */
+  padding: 30px 50px 30px;
+  border-radius: 20px;
+  width: 860px;
+  margin:  auto;
+  
+  gap: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+
+}
+
+.left-panel {
+  flex: 1.5;
+}
+
+.left-panel h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.left-panel .count {
+  color: white;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  color: white;
+}
+
+thead {
+  background-color: rgba(3, 3, 3, 0.15);
+}
+
+th, td {
+  padding: 8px 10px;
+  text-align: left;
+  border-bottom: 1px solid rgba(20, 20, 20, 0.884);
+}
+
+.right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+}
+
+textarea {
+  width: 100%;
+  height: 230px;
+  padding: 20px;
+  border-radius: 10px;
+  border: solid 2px #ffffff ;
+  resize: none;
+  font-size: 14px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.445);
+  color: white;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+.options1{
+    border: solid 2px #ffffff ;
+     border-radius: 10px;
+       padding: 20px;
+  width: 100%;
+
+
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.target-options {
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.target-options label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.target-options div label {
+  margin-right: 15px;
+}
+
+.send-button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.send-button:hover {
+  background-color: #0056b3;
+}
+
+.attach-image {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.image-upload-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 5px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.preview {
+  margin-top: 10px;
+}
+
+.preview-image {
+  width: 100px;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+
+/* Add this to MessageSender.css */
+.subject-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+
+/* Add these styles to MessageSender.css */
+
+.text-editor {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.menu-bar {
+  background-color: #f1f1f1;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu-bar button {
+  border: none;
+  background-color: transparent;
+  padding: 6px 10px;
+  margin-right: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.menu-bar button.is-active {
+  background-color: #ddd;
+}
+
+.menu-bar button:hover {
+  background-color: #e2e2e2;
+}
+
+.ProseMirror {
+  padding: 12px;
+  min-height: 200px;
+  outline: none;
+  font-size: 16px;
+}
+
+/* This will control the size of images inside the Tiptap editor */
+.ProseMirror img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+
+/* In MessageSender.css */
+
+.text-editor {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.menu-bar {
+  background-color: #f1f1f1;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu-bar button {
+  border: none;
+  background-color: transparent;
+  padding: 6px 10px;
+  margin-right: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.menu-bar button.is-active {
+  background-color: #ddd;
+}
+
+.menu-bar button:hover {
+  background-color: #e2e2e2;
+}
+
+.ProseMirror {
+  padding: 12px;
+  min-height: 200px;
+  outline: none;
+  font-size: 16px;
+  white-space: pre-wrap; /* ✅ This line fixes the warning */
+}
+
+
+/* --- Styles for Attachment List --- */
+
+/* --- Styles for Attachment List --- */
+
+.attachment-list {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #f0f2f5; /* Light grey background */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.attachment-list p {
+  margin: 0 0 8px 0;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+  color: black; /* Text is now black */
+}
+
+.attachment-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.attachment-list li {
+  padding: 4px 0;
+  color: #333; /* Dark grey text for file names */
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
