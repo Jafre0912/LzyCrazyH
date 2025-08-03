@@ -17,8 +17,8 @@ import { countries } from '../countries';
 import CountrySelector from './CountrySelector';
 
 // ✅ Make sure your code looks like this
-const BASE_URL = 'https://lzycrazyh-1.onrender.com'; // No trailing slash
-axios.post(`${BASE_URL}/api/upload/text`, data);
+const API_URL = `${process.env.REACT_APP_API_URL||'http://localhost:5001'}/api/upload`; // No trailing slash
+axios.post(`${API_URL}/text`, data);
 
 const fileTypes = {
   excel: '.xls,.xlsx,text/csv',
