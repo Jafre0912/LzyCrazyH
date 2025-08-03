@@ -16,7 +16,7 @@ import { MdError, MdCheckCircle } from "react-icons/md";
 import { countries } from '../countries';
 import CountrySelector from './CountrySelector';
 
-// ✅ CORRECT
+// ✅ Make sure your code looks like this
 const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001';
 const API_URL = `${API_BASE_URL}/api/upload`;
 
